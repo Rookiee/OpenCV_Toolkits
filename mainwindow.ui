@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="imgSrcLabel">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>Files(&amp;F)</string>
+    </property>
+    <addaction name="action_OpenImage"/>
+    <addaction name="action_SaveAs"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tools">
+    <property name="title">
+     <string>Tools(&amp;T)</string>
+    </property>
+    <addaction name="action_Erode"/>
+    <addaction name="action_addWeighted"/>
+    <addaction name="action_LinearFilter"/>
+    <addaction name="action_Non_LinearFilter"/>
+    <addaction name="action_Histogram"/>
+    <addaction name="action_Boundaries"/>
+    <addaction name="action_SplitRGB"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_Tools"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_OpenImage"/>
+   <addaction name="action_SaveAs"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_OpenImage">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/open_file_48px.png</normaloff>:/icons/icons/open_file_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open Image</string>
+   </property>
+  </action>
+  <action name="action_SaveAs">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/Save_as_48px.png</normaloff>:/icons/icons/Save_as_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;SaveAs</string>
+   </property>
+  </action>
+  <action name="action_Erode">
+   <property name="text">
+    <string>Erode(&amp;E)</string>
+   </property>
+  </action>
+  <action name="action_addWeighted">
+   <property name="text">
+    <string>AddWeighted</string>
+   </property>
+  </action>
+  <action name="action_LinearFilter">
+   <property name="text">
+    <string>LinearFilter</string>
+   </property>
+  </action>
+  <action name="action_Non_LinearFilter">
+   <property name="text">
+    <string>Non-LinearFilter</string>
+   </property>
+  </action>
+  <action name="action_Histogram">
+   <property name="text">
+    <string>Histogram(&amp;H)</string>
+   </property>
+  </action>
+  <action name="action_Boundaries">
+   <property name="text">
+    <string>Boundaries</string>
+   </property>
+  </action>
+  <action name="action_SplitRGB">
+   <property name="text">
+    <string>SplitRGB</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
